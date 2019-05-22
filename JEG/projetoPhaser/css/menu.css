@@ -1,0 +1,105 @@
+main, nav, figure, img, section{
+	margin: auto;
+}
+
+main{
+	height: 638px; /* Altura */
+  	width: 1218px; /* Largura */
+  	background-repeat: no-repeat, no-repeat;
+  	background-image: url("../resources/fundos/menu.png") ; 
+}
+
+nav{
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	top: 50px;
+	left: 550px;
+
+}
+
+button {
+	cursor: pointer;
+	position: relative;
+	background-color: inherit;
+	border: none;
+	padding: 0px;
+	top: 130px;
+	left: 30px;
+}
+
+button img
+{
+	margin: 0px;
+	height: 500px;
+}
+
+#opcoesBtn{
+	top: 230px;
+	left: 25px;
+}
+#skinsBtn{
+	top: 330px;
+	left: 20px;
+}
+#sairBtn{
+	top: 430px;
+	left: 15px;
+}
+
+
+/*======================================*/
+
+img
+{
+	margin: auto;
+	position:absolute;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#logo{
+	position: absolute;
+	top: 30px;
+	left: 600px;
+}
+
+/* -------------------- Animacao ------------------------ */
+#personagem1{
+	animation-name: animImg1;
+}
+@keyframes animImg1{
+	0% {opacity: 1;}
+	20%{opacity: 1;}
+	33%{opacity: 0;}
+	53%{opacity: 0;}
+	66%{opacity: 0;}
+	86%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#personagem2{
+	animation-name: animImg2;
+}
+@keyframes animImg2{
+	0% {opacity: 0;}
+	20%{opacity: 0;}
+	33%{opacity: 1;}
+	53%{opacity: 1;}
+	66%{opacity: 0;}
+	86%{opacity: 0;}
+	100%{opacity: 0;}
+}
+
+#personagem3{
+	animation-name: animImg3;
+}
+@keyframes animImg3{
+	0% {opacity: 0;}
+	20%{opacity: 0;}
+	33%{opacity: 0;}
+	53%{opacity: 0;}
+	66%{opacity: 1;}
+	86%{opacity: 1;}
+	100%{opacity: 0;}
+}

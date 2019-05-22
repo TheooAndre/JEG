@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Game</title>
+
+		<meta charset="utf-8">
+		
+		<script type="text/javascript" src="code/phaserv2.js"></script>
+		<script type="text/javascript" src="code/Boot.js"></script>
+		<script type="text/javascript" src="code/Preloader.js"></script>
+		<script type="text/javascript" src="code/Level1Atleta.js"></script>
+		<script type="text/javascript" src="code/Level2Atleta.js"></script>
+		<script type="text/javascript" src="code/Level1Astronauta.js"></script>
+		<script type="text/javascript" src="code/Level2Astronauta.js"></script>
+		<script type="text/javascript" src="code/Level1Pescador.js"></script>
+		<script type="text/javascript" src="code/Level2Pescador.js"></script>
+		<script type="text/javascript" src="code/PescadorEndless.js"></script>
+		<script type="text/javascript" src="code/AtletaEndless.js"></script>
+		<script type="text/javascript" src="code/AstronautaEndless.js"></script>
+
+		<script type="text/javascript" src="code/MainMenu.js"></script>
+		<script type="text/javascript" src="code/EscolhaPersonagem.js"></script>
+		<script type="text/javascript" src="code/EscolhaModo_Atleta.js"></script>
+		<script type="text/javascript" src="code/EscolhaModo_Pescador.js"></script>
+		<script type="text/javascript" src="code/EscolhaModo_Astronauta.js"></script>
+		<script type="text/javascript" src="code/Options.js"></script>
+		<script type="text/javascript" src="code/ajuda.js"></script>
+
+		
+		
+	</head>
+
+
+	<body>
+		<script type="text/javascript">
+			window.onload = function(){
+
+				var game = new Phaser.Game(800,600,Phaser.CANVAS,'');
+
+				game.state.add('Boot',Game.Boot);
+				game.state.add('Preloader',Game.Preloader);
+				game.state.add('MainMenu',Game.MainMenu);
+				game.state.add('EscolhaPersonagem',Game.EscolhaPersonagem);
+				game.state.add('EscolhaModo_Pescador',Game.EscolhaModo_Pescador);
+				game.state.add('EscolhaModo_Atleta',Game.EscolhaModo_Atleta);
+				game.state.add('EscolhaModo_Astronauta',Game.EscolhaModo_Astronauta);
+				game.state.add('Options',Game.Options);
+				game.state.add('Level1Atleta',Game.Level1Atleta);
+				game.state.add('Level2Atleta',Game.Level2Atleta);
+				game.state.add('Level1Pescador',Game.Level1Pescador);
+				game.state.add('Level2Pescador',Game.Level2Pescador);
+				game.state.add('Level1Astronauta',Game.Level1Astronauta);
+				game.state.add('Level2Astronauta',Game.Level2Astronauta);
+				game.state.add('PescadorEndless',Game.PescadorEndless);
+				game.state.add('AtletaEndless',Game.AtletaEndless);
+				game.state.add('AstronautaEndless',Game.AstronautaEndless);
+				game.state.add('ajuda',Game.ajuda);
+                
+
+				game.state.start('Boot');
+			}
+		</script>
+	</body>
+</html>
